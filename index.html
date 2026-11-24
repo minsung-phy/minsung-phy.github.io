@@ -17,349 +17,194 @@
   />
   <meta property="og:type" content="website" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap"
+  />
   <link rel="stylesheet" href="./style.css" />
   <script defer src="./script.js"></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="#top">Minsung Lee</a>
-
-      <div class="nav-links">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#honors">Honors</a>
-      </div>
-
+  <div class="page">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#honors">Honors</a>
       <button
         class="theme-toggle"
         id="theme-toggle"
         type="button"
         aria-label="Toggle color theme"
-      >
-        ◐
-      </button>
+      >◐</button>
     </nav>
-  </header>
 
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-main">
-        <p class="eyebrow">FORMAL SEMANTICS · WEBASSEMBLY · MODEL CHECKING</p>
+    <header class="profile" id="top">
+      <h1>Minsung Lee</h1>
+      <p class="role">Ph.D. Student, Computer Science and Engineering, POSTECH</p>
+      <p class="affiliation">
+        <a href="https://forever.postech.ac.kr/" target="_blank" rel="noreferrer">Formal Reasoning &amp; Verification Lab (FOREVER)</a>
+        · Advisor: Prof. Kyungmin Bae
+      </p>
 
-        <h1>
-          Hi, I’m <span class="accent">Minsung Lee.</span>
-        </h1>
+      <ul class="links">
+        <li><a href="mailto:minsunglee@postech.ac.kr">minsunglee@postech.ac.kr</a></li>
+        <li><a href="https://github.com/minsung-phy" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/minsung-lee-ab238740b/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <!-- <li><a href="./assets/Minsung_Lee_CV.pdf" target="_blank">CV</a></li> -->
+      </ul>
+    </header>
 
-        <p class="hero-subtitle">
-          Ph.D. Student in Computer Science and Engineering at
-          <strong>POSTECH</strong>.
+    <main>
+      <section class="bio">
+        <p>
+          My research focuses on formal semantics, software verification,
+          and model checking. I am currently working on WebAssembly, with
+          particular interest in translating declarative language
+          specifications into executable formal models for execution,
+          search, and verification.
         </p>
+        <p>
+          More broadly, I am interested in programming-language semantics,
+          rewriting logic, automated reasoning, and formal verification.
+        </p>
+      </section>
 
-        <div class="hero-bio">
-          <p>
-            My research focuses on formal semantics, software verification,
-            and model checking. I am currently working on WebAssembly, with
-            particular interest in translating declarative language
-            specifications into executable formal models for execution,
-            search, and verification.
-          </p>
-
-          <p>
-            More broadly, I am interested in programming-language semantics,
-            rewriting logic, automated reasoning, and formal verification.
-          </p>
-        </div>
-
-        <div class="hero-actions">
-          <a class="button button-primary" href="mailto:minsunglee@postech.ac.kr">
-            Email
-          </a>
-
-          <a
-            class="button button-secondary"
-            href="https://github.com/minsung-phy"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub ↗
-          </a>
-
-          <a
-            class="button button-secondary"
-            href="https://www.linkedin.com/in/minsung-lee-ab238740b/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn ↗
-          </a>
-
-          <!--
-          Add your CV later:
-          <a class="button button-secondary" href="./assets/Minsung_Lee_CV.pdf" target="_blank">
-            CV ↗
-          </a>
-          -->
-        </div>
-      </div>
-
-      <aside class="affiliation-card" aria-label="Current affiliation">
-        <div class="affiliation-status">
-          <span class="status-dot" aria-hidden="true"></span>
-          <span>Current affiliation</span>
-        </div>
-
-        <h2>Formal Reasoning &amp; Verification Lab</h2>
-        <p class="affiliation-org">POSTECH · FOREVER</p>
-
-        <div class="affiliation-divider"></div>
-
-        <div class="affiliation-detail">
-          <span>Advisor</span>
-          <strong>Prof. Kyungmin Bae</strong>
-        </div>
-
-        <a
-          class="affiliation-link"
-          href="https://forever.postech.ac.kr/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Visit lab ↗
-        </a>
-      </aside>
-    </section>
-
-
-    <section class="section container" id="research">
-      <div class="section-number">01 / Research</div>
-
-      <div class="section-heading">
+      <section id="research">
         <h2>Research Interests</h2>
-        <p>
-          I am broadly interested in programming-language semantics,
-          formal verification, automated reasoning, and executable models.
-        </p>
-      </div>
+        <dl class="interests">
+          <dt>Formal Semantics</dt>
+          <dd>Executable semantics and formal specifications of programming languages.</dd>
+          <dt>Model Checking</dt>
+          <dd>State-space exploration and temporal verification of programs and systems.</dd>
+          <dt>WebAssembly</dt>
+          <dd>Formal modeling and verification of WebAssembly semantics and programs.</dd>
+          <dt>Rewriting Logic</dt>
+          <dd>Executable formalization and reasoning using rewriting-based semantics.</dd>
+        </dl>
+      </section>
 
-      <div class="research-list">
-        <div class="research-row">
-          <span class="research-index">01</span>
-          <h3>Formal Semantics</h3>
-          <p>
-            Executable semantics and formal specifications of programming languages.
-          </p>
-        </div>
-
-        <div class="research-row">
-          <span class="research-index">02</span>
-          <h3>Model Checking</h3>
-          <p>
-            State-space exploration and temporal verification of programs and systems.
-          </p>
-        </div>
-
-        <div class="research-row">
-          <span class="research-index">03</span>
-          <h3>WebAssembly</h3>
-          <p>
-            Formal modeling and verification of WebAssembly semantics and programs.
-          </p>
-        </div>
-
-        <div class="research-row">
-          <span class="research-index">04</span>
-          <h3>Rewriting Logic</h3>
-          <p>
-            Executable formalization and reasoning using rewriting-based semantics.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" id="projects">
-      <div class="section-number">02 / Projects</div>
-
-      <div class="section-heading">
-        <h2>Selected Work</h2>
-        <p>
-          Research and software projects I am currently working on or have led.
-        </p>
-      </div>
-
-      <article class="featured-project">
-        <div class="project-topline">
-          <span class="project-status">Ongoing · Research</span>
-          <a
-            class="project-link"
-            href="https://github.com/minsung-phy/Spec2Maude"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View repository ↗
-          </a>
-        </div>
-
-        <div class="project-main">
-          <div>
-            <h3>Spec2Maude</h3>
-            <p class="project-kicker">
-              WebAssembly SpecTec semantics → executable Maude specifications
-            </p>
-          </div>
-
-          <p class="project-description">
-            Spec2Maude is an automated translation pipeline from WebAssembly
-            SpecTec semantics to Maude rewriting logic. It aims to preserve
-            the source semantics while producing executable formal
-            specifications that support execution, search, and model checking.
-          </p>
-        </div>
-
-        <div class="project-tags">
-          <span>OCaml</span>
-          <span>Maude</span>
-          <span>WebAssembly</span>
-          <span>Rewriting Logic</span>
-        </div>
-      </article>
-
-      <article class="secondary-project">
-        <div>
-          <span class="secondary-meta">Sep. 2024 – Jun. 2025 · Software Project</span>
-          <h3>HopeTail</h3>
-        </div>
-
-        <p>
-          Led the development of a multilingual web platform connecting
-          domestic and international dog adoptions.
-        </p>
-      </article>
-    </section>
-
-    <section class="section container" id="education">
-      <div class="section-number">03 / Education</div>
-
-      <div class="simple-list">
-        <div class="simple-row">
-          <div class="simple-date">Sep. 2026 — Present</div>
-
-          <div class="simple-content">
-            <h3>POSTECH</h3>
-            <p class="simple-title">
-              Ph.D. Student in Computer Science and Engineering
-            </p>
-            <p>
-              Formal Reasoning &amp; Verification Lab (FOREVER)<br />
-              Advisor: Prof. Kyungmin Bae
-            </p>
-          </div>
-        </div>
-
-        <div class="simple-row">
-          <div class="simple-date">Mar. 2022 — Aug. 2026</div>
-
-          <div class="simple-content">
-            <h3>Hanyang University</h3>
-            <p class="simple-title">
-              B.S. in Applied Physics · B.E. in Computer Science
-            </p>
-            <p>
-              Department of Applied Physics<br />
-              Division of Computer Science
-            </p>
-            <div class="education-honor">
-              <span class="education-honor-mark">✦</span>
-              <strong>Summa Cum Laude</strong>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul class="entries">
+          <li class="entry">
+            <div class="entry-head">
+              <h3>
+                <a href="https://github.com/minsung-phy/Spec2Maude" target="_blank" rel="noreferrer">Spec2Maude</a>
+              </h3>
+              <span class="date">Ongoing</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" id="experience">
-      <div class="section-number">04 / Experience</div>
-
-      <div class="simple-list">
-        <div class="simple-row">
-          <div class="simple-date">Jan. 2026 — Aug. 2026</div>
-
-          <div class="simple-content">
-            <h3>Undergraduate Researcher</h3>
+            <p class="sub">From SpecTec language specifications to executable Maude semantics</p>
             <p>
-              Formal Reasoning &amp; Verification Lab (FOREVER), POSTECH
+              A general translator from language specifications written in
+              SpecTec to Maude rewriting logic, designed to work for arbitrary
+              SpecTec definitions rather than a single language. As a primary
+              case study, it is applied to the WebAssembly specification: the
+              generated semantics, together with a <code>wasm2maude</code>
+              frontend for Wasm modules and test scripts, supports program
+              execution, state-space exploration, and model checking, and is
+              evaluated against the official WebAssembly core test suite.
             </p>
-          </div>
-        </div>
-
-        <div class="simple-row">
-          <div class="simple-date">May 2022 — Aug. 2024</div>
-
-          <div class="simple-content">
-            <h3>Research Intern</h3>
+            <p class="tags">OCaml · Maude · SpecTec · WebAssembly · Rewriting Logic</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>HopeTail</h3>
+              <span class="date">Sep. 2024 – Jun. 2025</span>
+            </div>
             <p>
-              Quality Management &amp; Technical Support Team, Silcroadsoft
+              Led the development of a multilingual web platform connecting
+              domestic and international dog adoptions.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
+          </li>
+        </ul>
+      </section>
 
-    <section class="section container" id="honors">
-      <div class="section-number">05 / Honors &amp; Awards</div>
+      <section id="education">
+        <h2>Education</h2>
+        <ul class="entries">
+          <li class="entry">
+            <div class="entry-head">
+              <h3>POSTECH</h3>
+              <span class="date">Sep. 2026 – Present</span>
+            </div>
+            <p class="sub">Ph.D. Student in Computer Science and Engineering</p>
+            <p>Formal Reasoning &amp; Verification Lab (FOREVER) · Advisor: Prof. Kyungmin Bae</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Hanyang University</h3>
+              <span class="date">Mar. 2022 – Aug. 2026</span>
+            </div>
+            <p class="sub">B.S. in Applied Physics · B.E. in Computer Science</p>
+            <p>Department of Applied Physics · Division of Computer Science</p>
+            <p><em>Summa Cum Laude</em></p>
+          </li>
+        </ul>
+      </section>
 
-      <div class="section-heading">
-        <h2>Selected Honors</h2>
-        <p>Selected academic honors, scholarships, and awards.</p>
-      </div>
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul class="entries">
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Undergraduate Researcher</h3>
+              <span class="date">Jan. 2026 – Aug. 2026</span>
+            </div>
+            <p>Formal Reasoning &amp; Verification Lab (FOREVER), POSTECH</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Research Intern</h3>
+              <span class="date">May 2022 – Aug. 2024</span>
+            </div>
+            <p>Quality Management &amp; Technical Support Team, Silcroadsoft</p>
+          </li>
+        </ul>
+      </section>
 
-      <div class="honors-list">
-        <div class="honor-row">
-          <div>
-            <h3>Summa Cum Laude</h3>
+      <section id="honors">
+        <h2>Honors &amp; Awards</h2>
+        <ul class="entries compact">
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Summa Cum Laude</h3>
+              <span class="date">Aug. 2026</span>
+            </div>
             <p>Hanyang University, Korea</p>
-          </div>
-          <span>Aug. 2026</span>
-        </div>
-
-        <div class="honor-row">
-          <div>
-            <h3>Encouragement Award</h3>
-            <p>
-              2025 ERICA Software-Up! 7th SW Startup Hackathon,
-              Hanyang University, Korea
-            </p>
-          </div>
-          <span>Jun. 2025</span>
-        </div>
-
-        <div class="honor-row">
-          <div>
-            <h3>College Leadership Scholarship</h3>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Encouragement Award</h3>
+              <span class="date">Jun. 2025</span>
+            </div>
+            <p>2025 ERICA Software-Up! 7th SW Startup Hackathon, Hanyang University, Korea</p>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>College Leadership Scholarship</h3>
+              <span class="date">Jun. 2025</span>
+            </div>
             <p>Hanyang University, Korea</p>
-          </div>
-          <span>Jun. 2025</span>
-        </div>
-
-        <div class="honor-row">
-          <div>
-            <h3>Hanyang Brain Scholarship</h3>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Hanyang Brain Scholarship</h3>
+              <span class="date">Feb. 2024</span>
+            </div>
             <p>Academic Excellence · Hanyang University, Korea</p>
-          </div>
-          <span>Feb. 2024</span>
-        </div>
-      </div>
-    </section>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Minsung Lee</span>
-    </div>
-  </footer>
+    <footer class="footer">
+      © <span id="year"></span> Minsung Lee
+    </footer>
+  </div>
 </body>
 </html>
